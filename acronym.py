@@ -14,6 +14,8 @@ try:
     nltk.corpus.words.ensure_loaded()
     nltk.corpus.brown.ensure_loaded()
     nltk.corpus.gutenberg.ensure_loaded()
+    nltk.corpus.cess_cat.ensure_loaded()
+    nltk.corpus.cess_esp.ensure_loaded()
 except LookupError:
     print("Initial downloading of word corpus")
     import ssl

@@ -13,7 +13,7 @@ If you want it for Catalan and Spanish, you can just clone this repository and
 run it as follows (must have nltk `pip install nltk`):
 
 ```bash
-$ python acronym/acronym.py --language catalan "Mecànica Quàntica de N-cossos i Sistemes Ultrafreds"
+$ python acronym.py --language catalan "Mecànica Quàntica de N-cossos i Sistemes Ultrafreds"
 Collecting word corpus
 Identifying matching acronyms
 Process Complete
