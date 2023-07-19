@@ -1,62 +1,58 @@
 # ACRONYM (Acronym CReatiON for You and Me)
+
 =====
 
-A python-based tool for creating English-ish Acronyms from your fancy project
+A python-based tool for creating (Catalan/Spanish/English)-ish Acronyms from
+your fancy project
 
-`ACRONYM` is described in this paper released on the arXiv: https://arxiv.org/abs/1903.12180
+The original (english-only) `ACRONYM` is described in this paper released on the
+arXiv: https://arxiv.org/abs/1903.12180 and can be installed using
+`pip install acronym`.
 
-`ACRONYM` can be installed using pip:
+If you want it for Catalan and Spanish, you can just clone this repository and
+run it as follows (must have nltk `pip install nltk`):
 
-```
-$ pip install acronym
-```
-
-Alternatively, you can clone this repository, navigate to the main directory, and run:
-```
-$ make install
-```
-
-To use, run like the following:
-```
-$ acronym "the long name of your very fancy project"
+```bash
+$ python acronym/acronym.py --language catalan "Mecànica Quàntica de N-cossos i Sistemes Ultrafreds"
 Collecting word corpus
 Identifying matching acronyms
 Process Complete
 (Score) ACRONYM   : Spelling
-============================================================
-(   35) TELAMON   : ThE Long nAMe of yOur very faNcy project
-(   35) THEOGAMY  : THE lOnG nAMe of your very fancY project
-(   35) THEOGONY  : THE lOnG name of yOur very faNcY project
-(   34) THEOMANCY : THE lOng naMe of your very fANCY project
-(   32) TAVERT    : The long nAme of your VEry fancy pRojecT
-(   32) TAREFA    : The long nAme of youR vEry FAncy project
-(   31) TELERAN   : ThE Long namE of your veRy fANcy project
-(   30) TELFER    : ThE Long name oF your vEry fancy pRoject
-(   30) THENAR    : THE long Name of your very fAncy pRoject
-(   30) TARPOT    : The long nAme of youR very fancy PrOjecT
-(   30) THEREAT   : THE long name of youR vEry fAncy projecT
-(   30) TORYFY    : The lOng name of youR verY FancY project
-(   30) THREAP    : THe long name of youR vEry fAncy Project
-(   30) TELARY    : ThE Long nAme of your veRy fancY project
-(   30) THEAVE    : THE long nAme of your Very fancy projEct
-(   30) TEAPOT    : ThE long nAme of your very fancy PrOjecT
-(   29) THONGMAN  : THe lONG naMe of your very fANcy project
-(   29) THERENCE  : THE long name of youR vEry faNCy projEct
-(   28) TONNER    : The lONg Name of your vEry fancy pRoject
-(   28) TENNER    : ThE loNg Name of your vEry fancy pRoject
-(   28) TERVEE    : ThE long name of youR VEry fancy projEct
-(   28) TAVERN    : The long nAme of your VERy faNcy project
-(   28) TEEVEE    : ThE long namE of your VEry fancy projEct
-(   28) TYRANT    : The long name of YouR very fANcy projecT
-(   28) TELEUT    : ThE Long namE of yoUr very fancy projecT
-(   28) TAUREAN   : The long nAme of yoUR vEry fANcy project
-(   27) TAVER     : The long nAme of your VEry fancy pRoject
-(   27) TEARER    : ThE long nAme of youR vEry fancy pRoject
-(   27) TERRANCE  : ThE long name of youR veRy fANCy projEct
-(   27) TAYER     : The long nAme of Your vEry fancy pRoject
+=======================================================================
+(   44) MANCANCES : MecànicA quàNtiCA de N-Cossos i sistemes ultrafrEdS
+(   41) MATANCES  : MecànicA quànTicA de N-Cossos i sistemes ultrafrEdS
+(   37) MUNTADORS : Mecànica qUàNTicA De n-cossOs i sistemes ultrafRedS
+(   36) MÀQUINES  : MecÀnica QUàntIca de N-cossos i sistemes ultrafrEdS
+(   35) MENTIDERS : MEcàNica quànTIca De n-cossos i sistemEs ultrafRedS
+(   34) MEDITAR   : MEcànica quàntica De n-cossos I sistemes ulTrAfReds
+(   34) MENUDERS  : MEcàNica qUàntica De n-cossos i sistemEs ultrafRedS
+(   34) MAQUETES  : MecànicA QUàntica de n-cossos i sistemEs ulTrafrEdS
+(   34) MUNTADES  : Mecànica qUàNTicA De n-cossos i sistemes ultrafrEdS
+(   34) MANTINC   : MecànicA quàNTIca de N-Cossos i sistemes ultrafreds
+(   34) MANTENIR  : MecànicA quàNTica dE N-cossos i sIstemes ultrafReds
+(   34) MANTENIA  : MecànicA quàNTica dE N-cossos i sIstemes ultrAfreds
+(   33) MASSIU    : MecànicA quàntica de n-coSsos i SIstemes Ultrafreds
+(   32) MECANISME : MECànicA quàNtica de n-cossos i sISteMes ultrafrEds
+(   32) MUNTADOR  : Mecànica qUàNTicA De n-cossOs i sistemes ultrafReds
+(   32) MENDIETA  : MEcàNica quàntica De n-cossos i sIstemEs ulTrAfreds
+(   32) MENTIDES  : MEcàNica quànTIca De n-cossos i sistemes ultrafrEdS
+(   31) MIQUES    : MecànIca Quàntica de n-cossos i sistemes UltrafrEdS
+(   31) MATENIR   : MecànicA quànTica dE N-cossos i sIstemes ultrafReds
+(   31) MÀQUINA   : MecÀnica QUàntIca de N-cossos i sistemes ultrAfreds
+(   31) MECENES   : MECànica quàntica dE N-cossos i sistemes ultrafrEdS
+(   30) MENTIDER  : MEcàNica quànTIca De n-cossos i sistemEs ultrafReds
+(   29) MANACOR   : MecànicA quàNticA de n-CossOs i sistemes ultrafReds
+(   29) MATUTES   : MecànicA quànTica de n-cossos i sistemes UlTrafrEdS
+(   29) MANDOLA   : MecànicA quàNtica De n-cossOs i sistemes uLtrAfreds
+(   29) MESURES   : MEcànica quàntica de n-coSsos i sistemes UltrafREdS
+(   29) MANCADA   : MecànicA quàNtiCA De n-cossos i sistemes ultrAfreds
+(   29) MUNTADA   : Mecànica qUàNTicA De n-cossos i sistemes ultrAfreds
+(   29) MAQUETA   : MecànicA QUàntica de n-cossos i sistemEs ulTrAfreds
+(   28) MADUR     : MecànicA quàntica De n-cossos i sistemes UltrafReds
 ```
 
-Acronym Scoring System *New in Version 2.0.0*
+Acronym Scoring System _New in Version 2.0.0_
+
 ```
 For each capitalized letter in the acronym:
    * 10 points if first letter in a word (with exception of first letter)
@@ -66,7 +62,9 @@ For each capitalized letter in the acronym:
        (ex: multiVariable -> 8 bonus points)
    * 2 bonus points if immediately following another capitalizd letter
 ```
+
 optional arguments:
+
 ```
   -h, --help            show this help message and exit
   --min-length MIN_LENGTH
@@ -80,4 +78,5 @@ optional arguments:
   --strict, -s          How strictly should the words be related to real
                         English? (-s for strict, -ss for very strict)
                         (default: None)
+  --language LANGUAGE   Choose between catalan, spanish or english (default: english)
 ```
